@@ -1,0 +1,24 @@
+.multiply{
+    width: 10%; background-color: darksalmon;
+}
+:hover.multiply{
+    background-color: darkviolet;
+}
+.addition{
+    width: 10%; background-color: darksalmon;
+}
+:hover.addition{
+    background-color: darkviolet;
+}
+.divide{
+    width: 10%; background-color: darksalmon;
+}
+:hover.divide{
+    background-color: darkviolet;
+}
+.subtract{
+    width: 10%; background-color: darksalmon;
+}
+:hover.subtract{
+    background-color: darkviolet;
+}

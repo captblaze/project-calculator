@@ -2,47 +2,66 @@
 <html lang="en">
 <head>
     <script src="js/jquery-3.6.0.js"></script> 
-    <script src="js/script.js"></script> 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/scripts.js"></script> 
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM</title>
+    <title>PROJECT CALCULATOR</title>
 </head>
-<body>
-    <form autocomplete="on">
+<!--The Body is styled with the background color of Darkslategrey and text-alignment is centered-->
+
+<body style="background-color: darkslategrey; text-align: center;color: rgb(28, 54, 2); border: dotted ; width: 50%; margin:auto; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;" >
+
+    <!-- this is the field where the user enters number and selects an operator-->
+
+<form name="project-calculator">
     <fieldset>
-        <legend>Project Calculator</legend>
-        <label for="firstnumber">First Number</label> <br>
-        <input type="text" name="Firstnumber" id="firstnumber" placeholder="Write your Firstnumber" required><br>
-        <label for="secondnumber">Second Number</label> <br>
-        <input type="text" name="secondnumber" id="secondnumber" placeholder="Enter your second number" required><br>
-        <input type="submit" value="+">
-        <input type="submit" value="x">  
-      
-        
-        <input type="submit" value="-">
-        <input type="submit" value="/">
 
-    </fieldset>
-  
+    <strong><em><legend>Project Calculator</strong></em></legend><br>
+    <img src="javascript.jpg" style="text-align: center; border-radius: 80%;"><br>
+    <!--This is where user enters first number-->
+
+    <div class="userInput" id="userInput"></div>
+        <strong><label for="firstnumber">First Number</label></strong> <br>
+        <input type="number" name="firstnumber" id="firstnumber" placeholder="Write your Firstnumber" required><br>
+    </div>
     
+    <!--This is where user enters second number-->
 
-        
-    </form>
+    <div class="userInput2" id="userInput2"> 
+        <strong><label for="secondnumber">Second Number</label></strong> <br>
+        <input type="number" name="secondnumber" id="secondnumber" placeholder="Enter your second number" required><br>
+    </div><br>
 
-    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-        0
-        <input type="range" id="a" name="a" value="50">
-        100+
-        <input type="number" id="b" name="b" value="50">
-        =
-        <output name="x" for="a b"></output><br><br>
-        <input type="password"><br><br>
-        <input type="submit" value="We move"> 
+    <!--this is the container where the user selects the operatoefor the calculation-->
 
-    </form>
+<div class="operators" id="operators" required>
+
+    <!--This operator is for Addition-->
+        <input type="button" class="addition" value="+">
+
+    <!--This operator is for Multiply-->
+        <input type="submit" class="multiply" value="x">  
+
+    <!--This operator is for Subtraction-->  
+        <input type="submit" class="subtract" value="-">
+
+    <!--This operator is for Division-->
+        <input type="submit" class="divide" value="/"><br>
+</div><br>
+
+
+<!--This label shows the result of the user inputs-->
+<div class="result" id="result"> 
+    <strong><label for="result">Result:</label></strong> <br>
+        <input type="text" name="result" id="result" placeholder="result"><br>
+    </fieldset>
+       
+</form><br>
+
+ 
 </body>
     
 </body>

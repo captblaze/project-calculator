@@ -4,7 +4,7 @@ $(document).ready(function() {
         let input2 = ($("#secondnumber").val());
         let  result = parseInt(input1) + parseInt(input2);
         event.preventDefault()
-       //alert(result)
+       alert(result)
        $("#result").text(result);
        
       });
